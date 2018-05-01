@@ -31,13 +31,17 @@ function Get-FizzBuzzed {
     Process {
 
         ForEach ($Number in $Numbers) {
+
             if ((((($Number/3 -is [int])) -eq $True) -AND ((($Number/5 -is [int])) -eq $TRUE)) -eq $TRUE) {
+
                 Write-Output "FizzBuzz"
-            }
-            elseif ((((($Number/3 -is [int])) -eq $True) -AND ((($Number/5 -is [int])) -eq $False)) -eq $TRUE) {
+
+            } elseif ((((($Number/3 -is [int])) -eq $True) -AND ((($Number/5 -is [int])) -eq $False)) -eq $TRUE) {
+                
                 Write-Output "FIZZ"
-            }
-            elseif ((((($Number/3 -is [int])) -eq $False) -AND ((($Number/5 -is [int])) -eq $TRUE)) -eq $TRUE) {
+
+            } elseif ((((($Number/3 -is [int])) -eq $False) -AND ((($Number/5 -is [int])) -eq $TRUE)) -eq $TRUE) {
+
                 Write-Output "BUZZ"
             
             } else {
@@ -47,7 +51,10 @@ function Get-FizzBuzzed {
             }
 
         }
+
     }
+
     End {}
+    
 }
     
